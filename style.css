@@ -3,6 +3,7 @@
 * {
     margin: 0;
     font-family: "Inter", sans-serif;
+    scroll-behavior: smooth;
 }
 
 section {
@@ -211,12 +212,14 @@ section {
     left: 0;
 }
 
-.moving-planet, .moving-planet2,  {
-    animation-name: planet_move;
+.moving-planet,
+.moving-planet2 {
+    animation-name: planet-move;
     animation-duration: 2s;
     animation-iteration-count: infinite;
     animation-direction: alternate;
 }
+
 
 .works-block img {
     margin: 0 20px;
@@ -270,5 +273,75 @@ section {
     font-family: "Comfortaa";
     font-size: 20px;
     max-width: 250px;
-    
+
 }
+
+footer {
+    background-color: #200153;
+    height: 110px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: #FFF;
+}
+
+.footer-info p {
+    font-family: 'Comfortaa';
+    padding-bottom: 10px;
+}
+
+.footer-year p {
+    font-family: 'Comfortaa';
+    letter-spacing: 1.5px;
+}
+
+.footer-links a {
+    margin-right: 15px;
+}
+
+nav{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+ }
+
+ .fixed-menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex: 1;
+ }
+ .nav-links{
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+    padding-right: 150px;
+ }
+
+ .nav-link{
+    width: 112px;
+    height: 40px;
+    border-radius: 12px;
+    border: 2px solid #000;
+    background-color: #FFF;
+    text-decoration: none;
+    color: #000;
+    font-size: 20px;
+    font-family: 'Comfortaa';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+ }
+ 
+ .logo{
+    color: #BBFF2C;
+    font-size: 80px;
+    padding-left: 50px;
+ }
+
+ .active {
+    background-color: #BBFF2C;
+ }
+
