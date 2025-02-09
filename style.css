@@ -393,20 +393,32 @@ nav {
         width: 326px;
         height: 296px;
         align-items: center;
+        margin-bottom: 20px;
     }
 
     .about-card img {
         width: 85%;
-        margin-top: 120px;
+        margin-top: 10px;
+        margin-bottom: 0;
+    }
+
+    .about-text {
+        text-align: center;
+        margin: 10px 0;
+    }
+
+    .about-text .button {
+        margin: auto;
     }
 
 
     .about-content {
-        width: 75%;
-        height: 250px;
+        width: 50%;
+       padding: 5px;
         margin-bottom: 20px;
             display:flex;
         flex-direction: column;
+        height: auto;
     }
 
     .about-title {
@@ -420,11 +432,11 @@ nav {
     }
 
     .about-card p {
+       
+       
+        
         font-size: 16px;
-        margin-top: 15%;
-        margin-bottom: 20px;
-        font-size: 16px;
-        margin: 5px 0;
+        
     }
 
     .skills-section {
@@ -466,6 +478,24 @@ nav {
 }
 
 
+.mobile-button {
+    display: none;
+    padding-top: 10px;
+    width: 40px;
+    position: absolute;
+    right: 20px;
+}
 
+.hide {
+    display: block;
+}
 
+.off-scroll {
+    overflow: hidden;
+}
 
+@media (max-width: 1000px) {
+    .mobile-button {
+        display: block;
+    }
+}
