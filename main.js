@@ -37,3 +37,4 @@ window.onscroll = function () {
         activeBtn.classList.remove('active')
     }
 };
+
