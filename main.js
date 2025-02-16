@@ -7,7 +7,7 @@ menu.addEventListener('click', function (event) {
         clickTarget.classList.add('active');
         activeBtn.classList.remove('active');
 console.log(5)
-        let mobile = document.querySelector('.mobile-menu');
+        let mobile = document.querySelector('.mobile-menu');                                //если было нажатие и мобильное меню не скрыто - скрыть меню
         if (!mobile.classList.contains('hide')) {
             mobile.classList.add('hide');
         }
@@ -15,7 +15,7 @@ console.log(5)
     }
 
     let body = document.querySelector("body");
-    let mobileMenu = document.querySelector(".mobile-menu");
+    let mobileMenu = document.querySelector(".mobile-menu");   //если на **body** нет **.off-scroll**, а мобильное меню открыто - то добавить **.off-scroll** для **body**
     if (!body.classList.contains("off-scroll") &&
         !mobileMenu.classList.contains("hide")) {
         body.classList.add("off-scroll");
@@ -56,9 +56,9 @@ window.onscroll = function () {
 
 document.querySelector(".mobile-button").addEventListener("click",
     function (event) {
-        document.querySelector(".mobile-menu").classList.toggle("hide");
+        document.querySelector(".mobile-menu").classList.toggle("hide");                   
     });
 
 
-
+ //.1. Проверять клик на **.mobile-button**2. При клике - добавлять или удалять класс hide у **.mobile-menu**
 
