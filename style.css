@@ -346,6 +346,22 @@ nav {
     background-color: #BBFF2C;
 }
 
+.mobile-button {
+    display: none;
+    padding-top: 10px;
+    width: 40px;
+    position: absolute;
+    right: 20px;
+}
+
+.hide {
+    display: none;
+}
+
+.off-scroll {
+    overflow: hidden;
+}
+
 @media (max-width: 1000px) {
 
     .nav-links {
@@ -371,7 +387,8 @@ nav {
         font-size: 15px;
     }
 
-    .planet, .moving-planet2 {
+    .planet,
+    .moving-planet2 {
         display: none;
     }
 
@@ -414,9 +431,9 @@ nav {
 
     .about-content {
         width: 50%;
-       padding: 5px;
+        padding: 5px;
         margin-bottom: 20px;
-            display:flex;
+        display: flex;
         flex-direction: column;
         height: auto;
     }
@@ -432,11 +449,11 @@ nav {
     }
 
     .about-card p {
-       
-       
-        
+
+
+
         font-size: 16px;
-        
+
     }
 
     .skills-section {
@@ -475,27 +492,38 @@ nav {
         max-width: 290x;
         margin-bottom: 65px;
     }
-}
 
-
-.mobile-button {
-    display: none;
-    padding-top: 10px;
-    width: 40px;
-    position: absolute;
-    right: 20px;
-}
-
-.hide {
-    display: block;
-}
-
-.off-scroll {
-    overflow: hidden;
-}
-
-@media (max-width: 1000px) {
     .mobile-button {
         display: block;
     }
+
+    .mobile-menu{
+        position: absolute;
+        top: 0;
+        z-index: -1;
+        width: 100%;
+        background-color: #200153;
+        min-height: 100vh;
+     }
+
+     .mobile-nav{
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+     }
+     
+     .mobile-nav-links,
+     .nav-link{
+        margin-bottom: 30px;
+        width: 210px;
+        height: 50px;
+     }
 }
+
+
+
+
+
+
